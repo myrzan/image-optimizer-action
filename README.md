@@ -2,13 +2,15 @@
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cadamsdev/notes/issues) ![GitHub License](https://img.shields.io/github/license/cadamsdev/image-optimizer-action) ![GitHub Tag](https://img.shields.io/github/v/tag/cadamsdev/image-optimizer-action)
 
-
-
 A GitHub action that optimizes images. A free and open source alternative to [imgbot](https://imgbot.net/). This GitHub action supports compressing PNG, JPG / JPEG, WEBP, AVIF and SVG.
 
 This tool is completely free. If you enjoy the tool please help support us.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cadamsdev)
+
+# Media
+
+![Screenshot 2024-11-25 212646](https://github.com/user-attachments/assets/5eadada6-bf96-413f-bb4d-c53808be600e)
 
 # Usage
 
