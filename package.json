@@ -11,7 +11,7 @@
     "test": "tsx src/test.ts"
   },
   "author": "Chad Adams",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "dependencies": {
     "@actions/core": "^1.11.1",
     "@actions/github": "^6.0.0",
