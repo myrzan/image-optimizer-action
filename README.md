@@ -41,7 +41,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Compress Images
         id: compress-images
-        uses: cadamsdev/image-optimizer-action@main
+        uses: cadamsdev/image-optimizer-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Report Results
@@ -71,7 +71,7 @@ jobs:
 
       - name: Compress Images
         id: compress-images
-        uses: cadamsdev/image-optimizer-action@main
+        uses: cadamsdev/image-optimizer-action@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Report Results
