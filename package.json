@@ -1,0 +1,28 @@
+{
+  "name": "image-optimizer-action-test",
+  "version": "1.0.0",
+  "description": "A GitHub Action to optimize images",
+  "main": "./dist/index.js",
+  "scripts": {
+    "type-check": "tsc --noEmit",
+    "start": "tsx src/index.ts",
+    "build": "npm run type-check && esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "release": "npm version patch && git push --follow-tags",
+    "test": "tsx src/test.ts"
+  },
+  "author": "Chad Adams",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@actions/github": "^6.0.0",
+    "glob": "^11.0.0",
+    "table": "^6.8.2",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "esbuild": "^0.24.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
