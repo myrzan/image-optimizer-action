@@ -123,7 +123,7 @@ with:
 
 # Permissions
 
-Make sure to check "Allow GitHub Actions to create and approve pull requests if you're using the manual workflow.
+Make sure to check "Allow GitHub Actions to create and approve pull requests" if you're using the manual workflow.
 
 ![Screenshot 2024-11-25 230654](https://github.com/user-attachments/assets/87e4e3c3-427d-427e-abba-5843b6d32f2f)
 
