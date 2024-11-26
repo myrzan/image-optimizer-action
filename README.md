@@ -10,7 +10,7 @@ This tool is completely free. If you enjoy the tool please help support us.
 
 # Media
 
-![Screenshot 2024-11-25 212646](https://github.com/user-attachments/assets/5eadada6-bf96-413f-bb4d-c53808be600e)
+![Screenshot 2024-11-25 231001](https://github.com/user-attachments/assets/281fd292-ec99-4bf8-a094-2f9a6713370d)
 
 # Usage
 
@@ -114,3 +114,11 @@ with:
 | export-webp   | Converts PNG, JPG / JPEG into WEBP           | boolean           | false           |
 | export-avif   | Converts PNG, JPG / JPEG, WEBP into AVIF     | boolean           | false           |
 | ignore-paths  | Paths of globs to prevent from processing    | string[]          | node_modules/** |
+
+# Permissions
+
+Make sure to check "Allow GitHub Actions to create and approve pull requests if you're using the manual workflow.
+
+![Screenshot 2024-11-25 230654](https://github.com/user-attachments/assets/87e4e3c3-427d-427e-abba-5843b6d32f2f)
+
+
