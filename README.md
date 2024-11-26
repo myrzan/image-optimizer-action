@@ -25,6 +25,8 @@ on:
       - '**/*.png'
       - '**/*.jpg'
       - '**/*.jpeg'
+      - '**/*.webp'
+      - '**/*.avif'
 
 jobs:
   build:
@@ -40,8 +42,6 @@ jobs:
         uses: cadamsdev/image-optimizer-action@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          ignore-paths: |
-            input/auto/**
       - name: Report Results
         if: steps.compress-images.outputs.terminal_report != ''
         run: echo "${{ steps.compress-images.outputs.terminal_report }}"
@@ -72,8 +72,6 @@ jobs:
         uses: cadamsdev/image-optimizer-action@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          export-webp: true
-          export-avif: true
       - name: Report Results
         if: steps.compress-images.outputs.terminal_report != ''
         run: echo "${{ steps.compress-images.outputs.terminal_report }}"
