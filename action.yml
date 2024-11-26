@@ -1,6 +1,9 @@
 name: 'Image Optimizer Action'
 description: 'A GitHub Action to optimize images'
 author: 'Chad Adams'
+branding:
+  icon: 'image'
+  color: 'white'
 
 inputs:
   github-token:
