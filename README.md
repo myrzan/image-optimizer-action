@@ -8,6 +8,12 @@ This tool is completely free. If you enjoy the tool please help support us.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cadamsdev)
 
+# Table of Contents
+1. [Media](?tab=readme-ov-file#media)
+2. [Usage](?tab=readme-ov-file#usage)
+3. [Configuration](?tab=readme-ov-file#configuration)
+4. [Permissions](?tab=readme-ov-file#permissions)
+
 # Media
 
 ![Screenshot 2024-11-25 231001](https://github.com/user-attachments/assets/281fd292-ec99-4bf8-a094-2f9a6713370d)
