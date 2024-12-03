@@ -2,7 +2,11 @@
 
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cadamsdev/notes/issues) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) ![GitHub Tag](https://img.shields.io/github/v/tag/cadamsdev/image-optimizer-action)
 
-A GitHub action that optimizes images. A free and open source alternative to [imgbot](https://imgbot.net/). This GitHub action supports compressing PNG, JPG / JPEG, WEBP, AVIF and SVG.
+A GitHub action that automatically compresses images in pull requests. Free and open-source alternative to [imgbot](https://imgbot.net/).
+
+Supports (PNG, JPG, WEBP, AVIF and SVG)
+
+[View On GitHub Marketplace](https://github.com/marketplace/actions/image-optimizer-action)
 
 This tool is completely free. If you enjoy the tool please help support us.
 
