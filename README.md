@@ -4,7 +4,19 @@
 
 A GitHub action that automatically compresses images in pull requests. Free and open-source alternative to [imgbot](https://imgbot.net/).
 
-Supports (SVG, PNG, JPG, GIF, WEBP, and AVIF)
+## Features
+
+✅ Fast, efficient and near-lossless compression 
+
+✅ Supports compressing SVG, PNG, JPG, GIF, WEBP, and AVIF
+
+✅ Can export PNG, JPG and GIF to WEBP
+
+✅ Can export PNG, JPG and WEBP to AVIF
+
+✅ Highly [customizable](#configuration)
+
+✅ Supports GitHub Enterprise
 
 [View On GitHub Marketplace](https://github.com/marketplace/actions/image-optimizer-action)
 
@@ -13,19 +25,18 @@ This tool is completely free. If you enjoy the tool please help support us.
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/cadamsdev)
 
 # Table of Contents
-
 1. [Media](#media)
 2. [Usage](#usage)
 3. [Configuration](#configuration)
 4. [Permissions](#permissions)
 
-# Media
+## Media
 
 ![Screenshot 2024-11-25 231001](https://github.com/user-attachments/assets/281fd292-ec99-4bf8-a094-2f9a6713370d)
 
-# Usage
+## Usage
 
-## Pull request workflow
+### Pull request workflow
 
 Create file .github/workflows/image-optimizer.yml
 
@@ -74,7 +85,7 @@ jobs:
         run: echo "${{ steps.compress-images.outputs.terminal_report }}"
 ```
 
-## Manual Workflow
+### Manual Workflow
 
 Create file .github/workflows/image-optimizer-manual.yml
 
@@ -122,7 +133,7 @@ jobs:
           body: ${{ steps.compress-images.outputs.markdown_report }}
 ```
 
-# Configuration
+## Configuration
 
 e.g
 
@@ -151,7 +162,7 @@ with:
 | replace-original-after-export-webp | Replace original files after exporting WebP files | boolean           | false             |
 | ignore-paths                       | Paths of globs to prevent from processing         | string[]          | node_modules/\*\* |
 
-# Permissions
+## Permissions
 
 Make sure to check "Allow GitHub Actions to create and approve pull requests" if you're using the manual workflow.
 
