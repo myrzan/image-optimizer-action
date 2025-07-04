@@ -1,5 +1,5 @@
 import { log } from '../utils/logger-utils';
-import { exec } from '@actions/exec';
+import { exec, getExecOutput } from '@actions/exec';
 
 export async function setupGitConfig() {
   await exec('git config --global user.name github-actions[bot]');
@@ -17,8 +17,14 @@ export async function checkoutBranch(branchName: string) {
 export async function commitAndPush(branchName: string) {
   await exec('git add .');
 
-  log('Committing changes');
-  await exec('sh', ['-c', 'git commit -m "Optimized images"']);
+  // Получаем название текущей ветки
+  const { stdout: branchNameRaw } = await getExecOutput('git rev-parse --abbrev-ref HEAD');
+  const currentBranch = branchNameRaw.trim();
+
+  const commitMessage = `${currentBranch} оптимизация изображений`;
+
+  log(`Committing changes with message: "${commitMessage}"`);
+  await exec('sh', ['-c', `git commit -m "${commitMessage}"`]);
 
   log('Pushing changes to the branch');
   await exec(`git push origin HEAD:${branchName}`);
