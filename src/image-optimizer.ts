@@ -55,6 +55,12 @@ const EXTENSION_TO_CONFIG_MAP: {
   png: {
     flag: COMPRESS_PNG,
     sharpFormat: 'png',
+    exportOptions: {
+      png: {
+        compressionLevel: 9,
+        adaptiveFiltering: true,
+      },
+    },
     exportToWebp: EXPORT_WEBP,
     exportToAvif: EXPORT_AVIF,
   },
